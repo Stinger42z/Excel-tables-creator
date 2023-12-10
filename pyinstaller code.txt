@@ -1,0 +1,4 @@
+python -m PyInstaller --noconsole --icon logo.ico --onedir main.py
+
+not needed
+(--add-data icon.png -add-data bin.png)
