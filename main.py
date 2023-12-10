@@ -38,7 +38,7 @@ class main_window(QWidget):
         # self.setGeometry(0,30,1920, 1020)
         self.setGeometry(320, 165, 1280, 720)
         self.setWindowTitle('Печать накладных ФИНАЛЬНАЯ')
-        self.setWindowIcon(QIcon('./_internal/icon.png'))
+        self.setWindowIcon(QIcon('./icon.png'))
 
         # итоговая сумма
         self.total = QLabel(self)
@@ -168,7 +168,7 @@ class main_window(QWidget):
 
         # удаление
         delete = QPushButton('', self)
-        delete.setIcon(QIcon('./_internal/bin.png'))
+        delete.setIcon(QIcon('./bin.png'))
         delete.clicked.connect(lambda: self.remove_row())
         self.table.setCellWidget(self.table.rowCount()-1, 6, delete)
 
